@@ -138,10 +138,12 @@
         <form class="location-form" id="form">
             <span class="iconify location-icon" data-icon="uil:location-point" style="color: #da2535;"
                 data-width="30"></span>
-            <input type="search" class="location-input" placeholder="Localização para entrega">
-            <button class="location-button" form="form"><span class="iconify search-icon" data-icon="uil:search"
+            <input type="search" class="location-input" placeholder="CEP">
+            <button class="location-button" form="form" type="button" onclick="buscarEndereco()"><span class="iconify search-icon" data-icon="uil:search"
                     style="color: white;" data-width="30"></span> <span class="text-button">Buscar</span></button>
         </form>
+        
+        <div id="endereco"></div>
     </section>
 
     <footer class="footer">
@@ -178,6 +180,7 @@
 
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script type="text/javascript" src="./main.js"></script>
+    <script src="./api.js"></script>
 </body>
 
 </html>
