@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FoodJP</title>
-
+    <link rel="icon" href="./assets/icon-header.png" sizes="140x140">
     <link rel="stylesheet" href="./SRC/style.css">
     <link rel="stylesheet" href="./SRC/mobile.css">
     <link rel="stylesheet" href="./SRC/reset.css">
@@ -13,7 +13,7 @@
 
 <body>
     <header class="header">
-        <span class="header-logo">Food<span style="color: #DA2535;">JP</span></span>
+        <span class="header-logo">Food<span style="color: #fbff04;">JP</span></span>
         <div class="menu-section">
             <div class="menu-toggle" onclick="openMenu()">
                 <div class="one"></div>
@@ -69,39 +69,72 @@
     </section>
 
     <section class="section-readmore">
-        <img src="./src/img/sc2.png" alt="" class="readmore-img">
+        <img src="./assets/sc2.jpg" alt="" class="readmore-img">
 
         <div class="readmore-text">
-            <h1 class="readmore-title">Feita de forma tradicional</h1>
-            <p class="readmore-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. </p>
-            <a href="#" class="readmore-link">Ler mais sobre o modo de preparo</a>
+            <h1 class="readmore-title">
+                Feita de forma tradicional
+            </h1>
+
+            <p class="readmore-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <a href="#" class="readmore-link">
+                Ler mais sobre o modo de preparo
+            </a>
         </div>
     </section>
 
     <section class="section-popular">
-        <h1 class="popular-title">Mais populares</h1>
+        <h1 class="popular-title">
+            Mais populares
+        </h1>
 
         <div class="popular-cards">
             <div class="popular-card">
                 <img src="./src/img/p1.png" alt="" class="popular-card-img">
-                <h3 class="popular-card-title">Ramem de Frango</h3>
-                <p class="popular-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <span class="popular-card-price">R$ 30</span>
+                <h3 class="popular-card-title">
+                    Ramem de Frango
+                </h3>
+
+                <p class="popular-card-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+
+                <span class="popular-card-price">
+                    R$ 30,00
+                </span>
             </div>
 
             <div class="popular-card">
                 <img src="./src/img/p2.png" alt="" class="popular-card-img">
-                <h3 class="popular-card-title">Ramem Apimentado</h3>
-                <p class="popular-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <span class="popular-card-price">R$ 30</span>
+                <h3 class="popular-card-title">
+                    Ramem Apimentado
+                </h3>
+
+                <p class="popular-card-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+
+                <span class="popular-card-price">
+                    R$ 30,00
+                </span>
             </div>
 
             <div class="popular-card">
                 <img src="./src/img/p3.png" alt="" class="popular-card-img">
-                <h3 class="popular-card-title">Ramem Tradicional</h3>
-                <p class="popular-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <span class="popular-card-price">R$ 30</span>
+                <h3 class="popular-card-title">
+                    Ramem Tradicional
+                </h3>
+                <p class="popular-card-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+
+                <span class="popular-card-price">
+                    R$ 30,00
+                </span>
             </div>
         </div>
     </section>
@@ -111,16 +144,23 @@
 
         <div class="feedback-cards">
             <div class="feedback-card">
-                <img src="./src/img/profile1.png" alt="" class="feedback-card-profile">
-                <h4 class="feedback-card-author">Daniele Almeida</h4>
-                <p class="feedback-card-desc">Ótimo serviço! Encantada com a qualidade dos pratos.</p>
+                <img src="./assets/virtual_assistant.jpg" alt="" class="feedback-card-profile">
+                <h4 class="feedback-card-author">
+                    Daniele Almeida
+                </h4>
+                <p class="feedback-card-desc">
+                    Ótimo serviço! Encantada com a qualidade dos pratos.
+                </p>
                 <img src="./src/img/stars.png" alt="" class="feedback-card-stars">
             </div>
 
             <div class="feedback-card">
-                <img src="./src/img/profile2.png" alt="" class="feedback-card-profile">
-                <h4 class="feedback-card-author">Ricardo França</h4>
-                <p class="feedback-card-desc">Não é apenas a comida excelente, o serviço torna a experiência especial.
+                <img src="./assets/virtual_assistant2.jpg" alt="" class="feedback-card-profile">
+                <h4 class="feedback-card-author">
+                    Ricardo França
+                </h4>
+                <p class="feedback-card-desc">
+                    Não é apenas a comida excelente, o serviço torna a experiência especial.
                 </p>
                 <img src="./src/img/stars.png" alt="" class="feedback-card-stars">
             </div>
@@ -130,24 +170,25 @@
     <section class="section-location">
         <h1 class="location-title">
             Localização
-        
+
         </h1>
-        
+
         <img src="./src/img/location.png" alt="" class="location-img">
 
         <form class="location-form" id="form">
             <span class="iconify location-icon" data-icon="uil:location-point" style="color: #da2535;"
                 data-width="30"></span>
-            <input type="search" class="location-input" placeholder="CEP">
-            <button class="location-button" form="form" type="button" onclick="buscarEndereco()"><span class="iconify search-icon" data-icon="uil:search"
-                    style="color: white;" data-width="30"></span> <span class="text-button">Buscar</span></button>
+            <input type="search" class="location-input" placeholder="LOCALIZAÇÃO PARA ENTREGA">
+            <button class="location-button" form="form" type="button" onclick="buscarEndereco()"><span
+                    class="iconify search-icon" data-icon="uil:search" style="color: white;" data-width="30"></span>
+                <span class="text-button">BUSCAR</span></button>
         </form>
-        
+
         <div id="endereco"></div>
     </section>
 
     <footer class="footer">
-        <h1 class="footer-title">Food<span style="color: #DA2535;">JP</span></h1>
+        <h1 class="footer-title">Food<span style="color: #eaff00;">JP</span></h1>
 
         <nav class="nav-cards">
             <ul class="nav-card">
